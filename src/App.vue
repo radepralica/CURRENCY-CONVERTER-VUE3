@@ -1,17 +1,65 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <the-header>
+      <div>
+        <h1>Currency Converter</h1>
+        <br />
+      </div>
+    </the-header>
+  </div>
+  <div class="container-fluid">
+    <currency-convert> </currency-convert>
+  </div>
+  <div class="container-fluid">
+    <br>
+    <the-footer>
+      <template #footer>
+        <div class="container-fluid lastly">
+          <h4 class="h4">
+            Lastly Updated:
+            <span style="color: green">{{ data.time_last_update_utc }}</span>
+          </h4>
+        </div>
+      </template>
+    </the-footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CurrencyConvert from './components/CurrencyConvert.vue';
+import TheHeader from './components/TheHeader.vue';
+
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    TheHeader,
+    CurrencyConvert,
+
+  },
+  data() {
+    return {
+       data: [],
+      
+    };
+  },
+  methods:{
+    fetchedData() {
+      fetch(
+        `https://v6.exchangerate-api.com/v6/446526e8760ae80b2ea33475/latest/USD`
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          this.data = data;
+          
+        });
+    },
+  },
+    mounted() {
+    this.fetchedData();
+    
 }
+}
+
 </script>
 
 <style>
@@ -23,4 +71,19 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+#axx {
+  width: 15em;
+  margin-left: 19em;
+  margin-top: -2em;
+}
+label {
+  font-size: 1.3em;
+  color: aqua;
+  margin-left: 0em;
+}
+h4{
+  padding-top:1em
+}
+
 </style>
