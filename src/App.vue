@@ -3,7 +3,7 @@
     <the-header>
       <div>
         <h1>Currency Converter</h1>
-        <br />
+        <br /><br /><br />
       </div>
     </the-header>
   </div>
@@ -11,7 +11,8 @@
     <currency-convert> </currency-convert>
   </div>
   <div class="container-fluid">
-    <br>
+    <br />
+
     <the-footer>
       <template #footer>
         <div class="container-fluid lastly">
@@ -27,39 +28,31 @@
 
 <script>
 import CurrencyConvert from './components/CurrencyConvert.vue';
-import TheHeader from './components/TheHeader.vue';
-
 
 export default {
   components: {
-    TheHeader,
     CurrencyConvert,
-
   },
   data() {
     return {
-       data: [],
-      
+      data: [],
     };
   },
-  methods:{
+  methods: {
     fetchedData() {
       fetch(
-        `https://v6.exchangerate-api.com/v6/446526e8760ae80b2ea33475/latest/USD`
+        `https://v6.exchangerate-api.com/v6/4e2f68bcc8b13e0c8aa633c3/latest/USD`
       )
         .then((res) => res.json())
         .then((data) => {
           this.data = data;
-          
         });
     },
   },
-    mounted() {
+  mounted() {
     this.fetchedData();
-    
-}
-}
-
+  },
+};
 </script>
 
 <style>
@@ -82,8 +75,7 @@ label {
   color: aqua;
   margin-left: 0em;
 }
-h4{
-  padding-top:1em
+h4 {
+  padding-top: 1em;
 }
-
 </style>

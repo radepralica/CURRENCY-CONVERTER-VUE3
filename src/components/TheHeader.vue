@@ -1,8 +1,8 @@
 <template>
- <div class="container-sm">
-  <h1>
-    <slot></slot>
-  </h1>
+  <div class="container-sm">
+    <h1>
+      <slot></slot>
+    </h1>
   </div>
 </template>
 
@@ -16,11 +16,18 @@ export default {
 
 <style scoped>
 h1 {
-  background: deepskyblue;
   height: 3em;
-  margin-top: 1em;
+  margin: auto;
   padding: 1em;
   color: white;
   font-weight: bolder;
+  width: auto;
+}
+div {
+  width: 95%;
+  background: deepskyblue;
+  height: auto;
+  justify-content: center;
+  display: flex;
 }
 </style>

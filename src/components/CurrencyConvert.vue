@@ -1,8 +1,5 @@
 <template>
-  <div class="container">
-    <br /><br /><br />
-
-    <br /><br />
+  <div class="container glavni">
     <label
       >1 <span style="color: green">{{ codesOne }} = </span> {{ rate }}
       <span style="color: red">{{ codesTwo }}</span></label
@@ -20,60 +17,60 @@
               @change="fetchData"
               @click="clearValues"
             >
-              <option value="BAM">BAM</option>
-              <option value="USD">USD</option>
-              <option value="EUR">EUR</option>
-              <option value="RSD">RSD</option>
-              <option value="HRK">HRK</option>
-              <option value="AED">AED</option>
-              <option value="ARS">ARS</option>
-              <option value="AUD">AUD</option>
-              <option value="BGN">BGN</option>
-              <option value="BRL">BRL</option>
-              <option value="BSD">BSD</option>
-              <option value="CAD">CAD</option>
-              <option value="CHF">CHF</option>
-              <option value="CLP">CLP</option>
-              <option value="CNY">CNY</option>
-              <option value="COP">COP</option>
-              <option value="CZK">CZK</option>
-              <option value="DKK">DKK</option>
-              <option value="DOP">DOP</option>
-              <option value="EGP">EGP</option>
-              <option value="FJD">FJD</option>
-              <option value="GBP">GBP</option>
-              <option value="GTQ">GTQ</option>
-              <option value="HKD">HKD</option>
-              <option value="HUF">HUF</option>
-              <option value="IDR">IDR</option>
-              <option value="ILS">ILS</option>
-              <option value="INR">INR</option>
-              <option value="ISK">ISK</option>
-              <option value="JPY">JPY</option>
-              <option value="KRW">KRW</option>
-              <option value="KZT">KZT</option>
-              <option value="MXN">MXN</option>
-              <option value="MYR">MYR</option>
-              <option value="NOK">NOK</option>
-              <option value="NZD">NZD</option>
-              <option value="PAB">PAB</option>
-              <option value="PEN">PEN</option>
-              <option value="PHP">PHP</option>
-              <option value="PKR">PKR</option>
-              <option value="PLN">PLN</option>
-              <option value="PYG">PYG</option>
-              <option value="RON">RON</option>
-              <option value="RUB">RUB</option>
-              <option value="SAR">SAR</option>
-              <option value="SEK">SEK</option>
-              <option value="SGD">SGD</option>
-              <option value="THB">THB</option>
-              <option value="TRY">TRY</option>
-              <option value="TWD">TWD</option>
-              <option value="UAH">UAH</option>
-              <option value="UYU">UYU</option>
-              <option value="VND">VND</option>
-              <option value="ZAR">ZAR</option>
+              <option value="BAM">🇧🇦 BAM</option>
+              <option value="USD">🇺🇸 USD</option>
+              <option value="EUR">🇪🇺 EUR</option>
+              <option value="RSD">🇷🇸 RSD</option>
+              <option value="HRK">🇭🇷 HRK</option>
+              <option value="AED">🇦🇪 AED</option>
+              <option value="ARS">🇦🇷 ARS</option>
+              <option value="AUD">🇦🇺 AUD</option>
+              <option value="BGN">🇧🇬 BGN</option>
+              <option value="BRL">🇧🇷 BRL</option>
+              <option value="BSD">🇧🇸 BSD</option>
+              <option value="CAD">🇨🇦 CAD</option>
+              <option value="CHF">🇨🇭 CHF</option>
+              <option value="CLP">🇨🇱 CLP</option>
+              <option value="CNY">🇨🇳 CNY</option>
+              <option value="COP">🇨🇴 COP</option>
+              <option value="CZK">🇨🇿 CZK</option>
+              <option value="DKK">🇩🇰 DKK</option>
+              <option value="DOP">🇩🇴 DOP</option>
+              <option value="EGP">🇪🇬 EGP</option>
+              <option value="FJD">🇫🇯 FJD</option>
+              <option value="GBP">🇬🇧 GBP</option>
+              <option value="GTQ">🇬🇹 GTQ</option>
+              <option value="HKD">🇭🇰 HKD</option>
+              <option value="HUF">🇭🇺 HUF</option>
+              <option value="IDR">🇮🇩 IDR</option>
+              <option value="ILS">🇮🇱 ILS</option>
+              <option value="INR">🇮🇳 INR</option>
+              <option value="ISK">🇮🇸 ISK</option>
+              <option value="JPY">🇯🇵 JPY</option>
+              <option value="KRW">🇰🇷 KRW</option>
+              <option value="KZT">🇰🇿 KZT</option>
+              <option value="MXN">🇲🇽 MXN</option>
+              <option value="MYR">🇲🇾 MYR</option>
+              <option value="NOK">🇳🇴 NOK</option>
+              <option value="NZD">🇳🇿 NZD</option>
+              <option value="PAB">🇵🇦 PAB</option>
+              <option value="PEN">🇵🇪 PEN</option>
+              <option value="PHP">🇵🇭 PHP</option>
+              <option value="PKR">🇵🇰 PKR</option>
+              <option value="PLN">🇵🇰 PLN</option>
+              <option value="PYG">🇵🇾 PYG</option>
+              <option value="RON">🇷🇴 RON</option>
+              <option value="RUB">🇷🇺 RUB</option>
+              <option value="SAR">🇸🇦 SAR</option>
+              <option value="SEK">🇸🇪 SEK</option>
+              <option value="SGD">🇸🇬 SGD</option>
+              <option value="THB">🇹🇭 THB</option>
+              <option value="TRY">🇹🇷 TRY</option>
+              <option value="TWD">🇹🇼 TWD</option>
+              <option value="UAH">🇺🇦 UAH</option>
+              <option value="UYU">🇺🇾 UYU</option>
+              <option value="VND">🇻🇳 VND</option>
+              <option value="ZAR">🇿🇦 ZAR</option>
             </select>
             <button
               @click.prevent="switchCodes"
@@ -90,60 +87,60 @@
               @change="fetchData"
               @click="clearValues"
             >
-              <option value="BAM">BAM</option>
-              <option value="USD">USD</option>
-              <option value="EUR">EUR</option>
-              <option value="RSD">RSD</option>
-              <option value="HRK">HRK</option>
-              <option value="AED">AED</option>
-              <option value="ARS">ARS</option>
-              <option value="AUD">AUD</option>
-              <option value="BGN">BGN</option>
-              <option value="BRL">BRL</option>
-              <option value="BSD">BSD</option>
-              <option value="CAD">CAD</option>
-              <option value="CHF">CHF</option>
-              <option value="CLP">CLP</option>
-              <option value="CNY">CNY</option>
-              <option value="COP">COP</option>
-              <option value="CZK">CZK</option>
-              <option value="DKK">DKK</option>
-              <option value="DOP">DOP</option>
-              <option value="EGP">EGP</option>
-              <option value="FJD">FJD</option>
-              <option value="GBP">GBP</option>
-              <option value="GTQ">GTQ</option>
-              <option value="HKD">HKD</option>
-              <option value="HUF">HUF</option>
-              <option value="IDR">IDR</option>
-              <option value="ILS">ILS</option>
-              <option value="INR">INR</option>
-              <option value="ISK">ISK</option>
-              <option value="JPY">JPY</option>
-              <option value="KRW">KRW</option>
-              <option value="KZT">KZT</option>
-              <option value="MXN">MXN</option>
-              <option value="MYR">MYR</option>
-              <option value="NOK">NOK</option>
-              <option value="NZD">NZD</option>
-              <option value="PAB">PAB</option>
-              <option value="PEN">PEN</option>
-              <option value="PHP">PHP</option>
-              <option value="PKR">PKR</option>
-              <option value="PLN">PLN</option>
-              <option value="PYG">PYG</option>
-              <option value="RON">RON</option>
-              <option value="RUB">RUB</option>
-              <option value="SAR">SAR</option>
-              <option value="SEK">SEK</option>
-              <option value="SGD">SGD</option>
-              <option value="THB">THB</option>
-              <option value="TRY">TRY</option>
-              <option value="TWD">TWD</option>
-              <option value="UAH">UAH</option>
-              <option value="UYU">UYU</option>
-              <option value="VND">VND</option>
-              <option value="ZAR">ZAR</option>
+              <option value="BAM">🇧🇦 BAM</option>
+              <option value="USD">🇺🇸 USD</option>
+              <option value="EUR">🇪🇺 EUR</option>
+              <option value="RSD">🇷🇸 RSD</option>
+              <option value="HRK">🇭🇷 HRK</option>
+              <option value="AED">🇦🇪 AED</option>
+              <option value="ARS">🇦🇷 ARS</option>
+              <option value="AUD">🇦🇺 AUD</option>
+              <option value="BGN">🇧🇬 BGN</option>
+              <option value="BRL">🇧🇷 BRL</option>
+              <option value="BSD">🇧🇸 BSD</option>
+              <option value="CAD">🇨🇦 CAD</option>
+              <option value="CHF">🇨🇭 CHF</option>
+              <option value="CLP">🇨🇱 CLP</option>
+              <option value="CNY">🇨🇳 CNY</option>
+              <option value="COP">🇨🇴 COP</option>
+              <option value="CZK">🇨🇿 CZK</option>
+              <option value="DKK">🇩🇰 DKK</option>
+              <option value="DOP">🇩🇴 DOP</option>
+              <option value="EGP">🇪🇬 EGP</option>
+              <option value="FJD">🇫🇯 FJD</option>
+              <option value="GBP">🇬🇧 GBP</option>
+              <option value="GTQ">🇬🇹 GTQ</option>
+              <option value="HKD">🇭🇰 HKD</option>
+              <option value="HUF">🇭🇺 HUF</option>
+              <option value="IDR">🇮🇩 IDR</option>
+              <option value="ILS">🇮🇱 ILS</option>
+              <option value="INR">🇮🇳 INR</option>
+              <option value="ISK">🇮🇸 ISK</option>
+              <option value="JPY">🇯🇵 JPY</option>
+              <option value="KRW">🇰🇷 KRW</option>
+              <option value="KZT">🇰🇿 KZT</option>
+              <option value="MXN">🇲🇽 MXN</option>
+              <option value="MYR">🇲🇾 MYR</option>
+              <option value="NOK">🇳🇴 NOK</option>
+              <option value="NZD">🇳🇿 NZD</option>
+              <option value="PAB">🇵🇦 PAB</option>
+              <option value="PEN">🇵🇪 PEN</option>
+              <option value="PHP">🇵🇭 PHP</option>
+              <option value="PKR">🇵🇰 PKR</option>
+              <option value="PLN">🇵🇰 PLN</option>
+              <option value="PYG">🇵🇾 PYG</option>
+              <option value="RON">🇷🇴 RON</option>
+              <option value="RUB">🇷🇺 RUB</option>
+              <option value="SAR">🇸🇦 SAR</option>
+              <option value="SEK">🇸🇪 SEK</option>
+              <option value="SGD">🇸🇬 SGD</option>
+              <option value="THB">🇹🇭 THB</option>
+              <option value="TRY">🇹🇷 TRY</option>
+              <option value="TWD">🇹🇼 TWD</option>
+              <option value="UAH">🇺🇦 UAH</option>
+              <option value="UYU">🇺🇾 UYU</option>
+              <option value="VND">🇻🇳 VND</option>
+              <option value="ZAR">🇿🇦 ZAR</option>
             </select>
           </div>
           <div class="col-6">
@@ -152,27 +149,19 @@
               type="number"
               v-model="amountOne"
               min="0"
-              step="5"
+              step="10"
+              @input="fetchData"
             />
             <br /><br /><br /><br />
-            <!-- <input
+            <input
               class="form-control inp-two"
               type="number"
               v-model="amountTwo"
-               min=0
-              step=5
+              min="0"
+              step="5"
               @input="fetchData"
-            /> -->
-            <label for=""
-              >{{ result }}
-              <span style="color: red">{{ codesTwo }}</span></label
-            >
+            />
           </div>
-        </div>
-        <div class="col-12">
-          <button @click.prevent="fetchingData" class="btn btn-primary but">
-            Izračunaj
-          </button>
         </div>
       </div>
     </form>
@@ -181,14 +170,15 @@
 
 <script>
 export default {
+  components: {},
   data() {
     return {
       data: [],
       codesOne: 'USD',
       codesTwo: 'EUR',
       amountOne: '0',
-      //amountTwo: '0',
-      result: '',
+      amountTwo: '0',
+
       rate: '',
     };
   },
@@ -196,13 +186,13 @@ export default {
   methods: {
     fetchData() {
       fetch(
-        `https://v6.exchangerate-api.com/v6/446526e8760ae80b2ea33475/latest/${this.codesOne}`
+        `https://v6.exchangerate-api.com/v6/4e2f68bcc8b13e0c8aa633c3/latest/${this.codesOne}`
       )
         .then((res) => res.json())
         .then((data) => {
           this.data = data;
           this.rate = data.conversion_rates[this.codesTwo];
-          //this.amountTwo = (this.amountOne * this.rate).toFixed(2);
+          this.amountTwo = (this.amountOne * this.rate).toFixed(2);
         });
     },
     switchCodes() {
@@ -210,11 +200,8 @@ export default {
       this.codesOne = this.codesTwo;
       this.codesTwo = temp;
       this.amountOne = '0';
-      this.result = '0.00';
-
-      this.fetchingData();
-
-      console.log(this.data.conversion_rates);
+      console.log(this.data);
+      this.fetchData();
     },
     fetchingData() {
       this.result = (this.amountOne * this.rate).toFixed(2);
@@ -246,10 +233,10 @@ button {
   height: 18em;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 7em;
+  margin-top: 1em;
 }
 select {
-  width: 10em;
+  width: auto;
 }
 .form-control {
   width: em;
@@ -281,5 +268,12 @@ label {
 h4 {
   padding-top: 1.2em;
   text-align: justify;
+}
+img {
+  width: 5px;
+  height: 7px;
+}
+.glavni {
+  width: auto;
 }
 </style>
