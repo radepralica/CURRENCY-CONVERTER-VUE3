@@ -1,4 +1,4 @@
-# prazan-projekt
+# currency-converter
 
 ## Project setup
 ```
