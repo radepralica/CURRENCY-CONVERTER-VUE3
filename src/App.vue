@@ -41,7 +41,7 @@ export default {
   methods: {
     fetchedData() {
       fetch(
-        `https://v6.exchangerate-api.com/v6/4e2f68bcc8b13e0c8aa633c3/latest/USD`
+        `https://v6.exchangerate-api.com/v6/https://v6.exchangerate-api.com/v6/11656c6fa8f018b5d69fcebe/latest/USD`
       )
         .then((res) => res.json())
         .then((data) => {
